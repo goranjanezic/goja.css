@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		css\responsive.css = css\responsive.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{00C1AC56-CC7F-413D-9424-81D7AECCF641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResponsiveDesign", "ResponsiveDesign", "{3FB5CDB6-0261-4CC7-A0DF-BCA59FCDBAD0}"
+	ProjectSection(SolutionItems) = preProject
+		Samples\ResponsiveDesign\index.html = Samples\ResponsiveDesign\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{6E893E3E-FE59-40C3-A75B-4AB0D77521A3}"
+	ProjectSection(SolutionItems) = preProject
+		Samples\ResponsiveDesign\css\main.css = Samples\ResponsiveDesign\css\main.css
+		Samples\ResponsiveDesign\css\site.css = Samples\ResponsiveDesign\css\site.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FB5CDB6-0261-4CC7-A0DF-BCA59FCDBAD0} = {00C1AC56-CC7F-413D-9424-81D7AECCF641}
+		{6E893E3E-FE59-40C3-A75B-4AB0D77521A3} = {3FB5CDB6-0261-4CC7-A0DF-BCA59FCDBAD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D602AFD-23C8-4F39-89D6-078F14B0C324}
+	EndGlobalSection
+EndGlobal
