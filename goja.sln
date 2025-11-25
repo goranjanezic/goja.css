@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{02EA681E-C7D
 	ProjectSection(SolutionItems) = preProject
 		css\menu.css = css\menu.css
 		css\responsive.css = css\responsive.css
+		css\slideshow.css = css\slideshow.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{00C1AC56-CC7F-413D-9424-81D7AECCF641}"
@@ -26,6 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{43A0D09F-AE94-
 	ProjectSection(SolutionItems) = preProject
 		js\elem_queries.js = js\elem_queries.js
 		js\menu.js = js\menu.js
+		js\slideshow.js = js\slideshow.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{301206C8-37EC-4D7B-88F4-018C27344319}"
