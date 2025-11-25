@@ -6,21 +6,14 @@ const attr = "open";
 mql.addEventListener("change", screenTest);
 btn.addEventListener("click", showHideMenu);
 window.addEventListener("load", onWindowLoad);
-window.addEventListener("scroll", onWindowScroll);
 
 function onWindowLoad() {
     screenTest(mql);
 }
 
-function onWindowScroll() {
-    if (menu.hasAttribute(attr)) {
-        window.scrollTo(0, 0);
-    }
-}
-
 function screenTest(e) {
     if (e.matches) {
-        btn.style.display = "block";
+        btn.style.display = "";
     } else {
         btn.style.display = "none";
         menu.removeAttribute(attr, "");

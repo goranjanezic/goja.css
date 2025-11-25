@@ -4,7 +4,7 @@
 
     .menu ul {
         display: flex;
-        gap: 0.5rem;
+        gap: 0.5em;
         justify-content: center;
         height: 100%;
     }
@@ -13,10 +13,12 @@
     .menu {
         order: 1;
         position: absolute;
-        width: calc(100% - 3rem) !important;
-        padding: 1rem 1rem 1rem 2rem;
-        top: 56px;
-        left: 0;
+        width: calc(100% - 2rem) !important;
+        padding: 1em;
+        top: 58px;
+        left: -1px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
     }
 
         .menu:not([open]) {
@@ -33,10 +35,12 @@
     .menu {
         order: 1;
         position: absolute;
-        width: calc(100% - 3rem) !important;
-        padding: 1rem 1rem 1rem 2rem;
-        top: 56px;
-        left: 0;
+        width: calc(100% - 2rem) !important;
+        padding: 1em;
+        top: 58px;
+        left: -1px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
     }
 
         .menu:not([open]) {
@@ -55,9 +59,11 @@
         position: initial !important;
         width: auto !important;
         display: initial !important;
-        padding: 0;
+        padding: 0px;
         top: initial;
         left: initial;
+        border: 0px;
+        border-radius: 0px;
     }
 
         .menu ul {
