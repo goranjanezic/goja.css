@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Images Demo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <style>
+        :root {
+            --col-white-80: rgb(255, 255, 255, 0.8);
+            --col-white-50: rgb(255, 255, 255, 0.5);
+            --col-black-80: rgb(0, 0, 0, 0.8);
+        }
+
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .slider {
+            justify-content: center;
+        }
+
+        .img {
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            padding: 2rem;
+            cursor: pointer;
+        }
+
+        .img1 {
+            background-image: url("../../images/img1.jpg");
+        }
+
+        .img2 {
+            background-image: url("../../images/img2.jpg");
+        }
+
+        .img3 {
+            background-image: url("../../images/img3.jpg");
+        }
+
+        .img4 {
+            background-image: url("../../images/img4.jpg");
+        }
+
+        .bi {
+            font-size: 1.75rem;
+        }
+
+        .popup {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            padding-top: 4em;
+            z-index: 1;
+            width: 100%;
+            height: calc(100% - 4em);
+            background-color: var(--col-black-80);
+        }
+
+            .popup > img {
+                width: 100%;
+            }
+
+            .popup > .title {
+                color: var(--col-white-80);
+                text-align: center;
+                position: fixed;
+                top: 0;
+                left: 1rem;
+            }
+
+        #popup_btn_close {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            font-weight: 600;
+            color: var(--col-white-80);
+            cursor: pointer;
+        }
+
+            #popup_btn_close:hover {
+                color: var(--col-white-50);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="row slider">
+        <div class="col img img1" title="Image 1">
+            <h2>Hello World</h2>
+        </div>
+        <div class="col img img2" title="Image 2">
+            <h2>Hello World</h2>
+        </div>
+        <div class="col img img3" title="Image 3">
+            <h2>Hello World</h2>
+        </div>
+        <div class="col img img4" title="Image 4">
+            <h2>Hello World</h2>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <a id="popup_btn_close" title="Close">
+            <i class="bi bi-x-lg"></i>
+        </a>
+
+        <img id="popup_img" />
+
+        <h4 id="popup_title" class="title"></h4>
+    </div>
+
+    <script src="../../js/elem_queries.js"></script>
+
+    <script>
+        const images = $$(".slider .img");
+
+        const popup = $("#popup");
+        const popup_btn_close = $("#popup_btn_close");
+        const popup_img = $("#popup_img");
+        const title = $("#popup_title");
+
+        window.addEventListener("load", onWindowLoad);
+        popup_btn_close.addEventListener("click", onClose);
+
+        function onClose() {
+            popup.style.display = "none";
+        }
+
+        function onImageClick(img) {
+            popup.style.display = "block";
+
+            popup_title.innerText = img.title;
+
+            let style = window.getComputedStyle(img, false);
+            let src = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+            popup_img.src = src;
+        }
+
+        function onWindowLoad() {
+            images.forEach(img => {
+                img.addEventListener("click", () => onImageClick(img));
+            });
+        }
+
+    </script>
+</body>
+
+</html>

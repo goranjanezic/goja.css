@@ -37,6 +37,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menu", "Menu", "{5495F8BA-2
 		Test\Menu\index.html = Test\Menu\index.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{CCFFBA33-BDBD-46C5-B669-D225B3145D0B}"
+	ProjectSection(SolutionItems) = preProject
+		Test\Images\index.html = Test\Images\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1DE7E699-96C8-4EF5-B1ED-7707742E3D4E}"
+	ProjectSection(SolutionItems) = preProject
+		images\img1.jpg = images\img1.jpg
+		images\img2.jpg = images\img2.jpg
+		images\img3.jpg = images\img3.jpg
+		images\img4.jpg = images\img4.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +58,7 @@ Global
 		{3FB5CDB6-0261-4CC7-A0DF-BCA59FCDBAD0} = {00C1AC56-CC7F-413D-9424-81D7AECCF641}
 		{6E893E3E-FE59-40C3-A75B-4AB0D77521A3} = {3FB5CDB6-0261-4CC7-A0DF-BCA59FCDBAD0}
 		{5495F8BA-2BE2-4476-BDCE-103E2143A803} = {301206C8-37EC-4D7B-88F4-018C27344319}
+		{CCFFBA33-BDBD-46C5-B669-D225B3145D0B} = {301206C8-37EC-4D7B-88F4-018C27344319}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D602AFD-23C8-4F39-89D6-078F14B0C324}
