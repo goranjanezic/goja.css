@@ -29,6 +29,7 @@
         .img {
             background-repeat: no-repeat;
             background-size: auto 100%;
+            background-position: center;
             padding: 2rem;
             cursor: pointer;
         }
@@ -59,14 +60,15 @@
             top: 0px;
             left: 0px;
             padding-top: 4em;
+            padding-bottom: 4em;
             z-index: 1;
             width: 100%;
-            height: calc(100% - 4em);
             background-color: var(--col-black-80);
         }
 
             .popup > img {
-                width: 100%;
+                display: block;
+                margin: auto;
             }
 
             .popup > .title {
@@ -89,22 +91,40 @@
             #popup_btn_close:hover {
                 color: var(--col-white-50);
             }
+
+        @media only screen and (max-width: 767px) {
+            .popup > img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .popup > img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .popup > img {
+                width: 75%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="row slider">
         <div class="col img img1" title="Image 1">
-            <h2>Hello World</h2>
+            <h2 style="text-align: center;">Hello World</h2>
         </div>
         <div class="col img img2" title="Image 2">
-            <h2>Hello World</h2>
+            <h2 style="text-align: center;">Hello World</h2>
         </div>
         <div class="col img img3" title="Image 3">
-            <h2>Hello World</h2>
+            <h2 style="text-align: center;">Hello World</h2>
         </div>
         <div class="col img img4" title="Image 4">
-            <h2>Hello World</h2>
+            <h2 style="text-align: center;">Hello World</h2>
         </div>
     </div>
 
